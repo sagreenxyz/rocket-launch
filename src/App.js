@@ -4,7 +4,7 @@ import './App.css';
 function RocketLauncher() {
   return (
     <div>
-      RocketLauncher
+      Rocket launcher is counting down
     </div>
   )
 }
@@ -16,9 +16,9 @@ function App() {
       <main>
         <h1>Learning Cleanup!</h1>
         <button onClick={() => setLaunch(!launch)}>
-          { launch? "Abort Rocket Launch" : "Start Rocket Launch"}
+          {launch ? "Abort Rocket Launch" : "Start Rocket Launch"}
         </button>
-        <RocketLauncher />
+        {launch ? <RocketLauncher /> : null}
       </main>
     </div>
   );
