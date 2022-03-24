@@ -24,6 +24,11 @@ function RocketLauncher() {
 
 function App() {
   let [launch, setLaunch] = useState(true)
+
+  const handleChange = () => {
+    console.log('handleChange called')
+  }
+
   return (
     <div className="App">
       <main>
@@ -31,6 +36,7 @@ function App() {
         <button onClick={() => setLaunch(!launch)}>
           {launch ? "Abort Rocket Launch" : "Start Rocket Launch"}
         </button>
+        <input type="text" onChange={handleChange} />
         {launch ? <RocketLauncher /> : null}
       </main>
     </div>
