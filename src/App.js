@@ -1,4 +1,4 @@
-import {useState} from 'react'
+import { useState } from 'react'
 import './App.css';
 
 function RocketLauncher() {
@@ -15,8 +15,8 @@ function App() {
     <div className="App">
       <main>
         <h1>Learning Cleanup!</h1>
-        <button>
-          Start Rocket Launch
+        <button onClick={() => setLaunch(!launch)}>
+          { launch? "Abort Rocket Launch" : "Start Rocket Launch"}
         </button>
         <RocketLauncher />
       </main>
@@ -25,4 +25,3 @@ function App() {
 }
 
 export default App;
- 
