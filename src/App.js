@@ -24,6 +24,7 @@ function RocketLauncher() {
 
 function App() {
   let [launch, setLaunch] = useState(true)
+  let [rocketName, setRocketName] = useState('Apollo')
 
   const handleChange = (e) => {
     console.log(`handleChange called with value: ${e.target.value}`)
