@@ -27,13 +27,13 @@ function App() {
   let [rocketName, setRocketName] = useState('Apollo')
 
   const handleChange = (e) => {
-    console.log(`handleChange called with value: ${e.target.value}`)
+    setRocketName(e.target.value)
   }
 
   return (
     <div className="App">
       <main>
-        <h1>Learning Cleanup!</h1>
+        <h1>{rocketName}</h1>
         <button onClick={() => setLaunch(!launch)}>
           {launch ? "Abort Rocket Launch" : "Start Rocket Launch"}
         </button>
