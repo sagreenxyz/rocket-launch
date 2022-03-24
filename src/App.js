@@ -11,6 +11,7 @@ function RocketLauncher() {
 
     return () => {
       console.log('Rocket launcher unmounted');
+      clearInterval(interval)
     }
   })
 
