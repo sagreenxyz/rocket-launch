@@ -1,7 +1,11 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import './App.css';
 
 function RocketLauncher() {
+  useEffect(() => {
+    console.log('Rocket launcher mounted')
+  })
+
   return (
     <div>
       Rocket launcher is counting down
