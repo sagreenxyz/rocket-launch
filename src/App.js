@@ -13,6 +13,9 @@ function App() {
     <div className="App">
       <main>
         <h1>Learning Cleanup!</h1>
+        <button>
+          Start Rocket Launch
+        </button>
         <RocketLauncher />
       </main>
     </div>
