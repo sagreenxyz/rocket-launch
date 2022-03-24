@@ -5,7 +5,9 @@ function RocketLauncher() {
   let counter = 300000
 
   useEffect(() => {
+    const countdown = () => console.log(counter -= 1)
     console.log(`Rocket launcher mounted and counter is at ${counter}`)
+    countdown()
   })
 
   return (
