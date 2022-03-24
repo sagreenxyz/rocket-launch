@@ -2,8 +2,10 @@ import { useEffect, useState } from 'react'
 import './App.css';
 
 function RocketLauncher() {
+  let counter = 300000
+
   useEffect(() => {
-    console.log('Rocket launcher mounted')
+    console.log(`Rocket launcher mounted and counter is at ${counter}`)
   })
 
   return (
